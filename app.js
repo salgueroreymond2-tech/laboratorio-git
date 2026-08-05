@@ -78,6 +78,8 @@ formContacto.addEventListener('submit', (e) => {
     email: document.getElementById('email').value.trim()
   };
 
+  console.log('Formulario enviado:', nuevoContacto);
+
   contactos.push(nuevoContacto);
   guardarEnLocalStorage();
   formContacto.reset();
