@@ -1,28 +1,32 @@
 :root {
   --primary: #2563eb;
   --primary-hover: #1d4ed8;
-  --bg: #f8fafc;
-  --card-bg: #ffffff;
+  --bg: #eff6ff;
+  --card-bg: rgba(255, 255, 255, 0.9);
   --text: #0f172a;
   --text-muted: #64748b;
-  --border: #cbd5e1;
-  --radius: 12px;
+  --border: rgba(148, 163, 184, 0.45);
+  --radius: 16px;
 }
 
 body {
   margin: 0;
   font-family: system-ui, -apple-system, sans-serif;
-  background-color: var(--bg);
+  background:
+    radial-gradient(circle at top left, rgba(96, 165, 250, 0.55), transparent 38%),
+    radial-gradient(circle at bottom right, rgba(37, 99, 235, 0.35), transparent 40%),
+    linear-gradient(135deg, #eff6ff 0%, #dbeafe 45%, #bfdbfe 100%);
   color: var(--text);
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  padding: 1rem;
 }
 
 .login-container {
   width: 100%;
-  max-width: 400px;
+  max-width: 420px;
   padding: 1rem;
 }
 
@@ -30,8 +34,9 @@ body {
   background: var(--card-bg);
   padding: 2.5rem 2rem;
   border-radius: var(--radius);
-  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 20px 40px -20px rgba(37, 99, 235, 0.45);
   border: 1px solid var(--border);
+  backdrop-filter: blur(10px);
 }
 
 .login-header h1 {
