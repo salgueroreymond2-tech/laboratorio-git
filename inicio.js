@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Redirigir al gestor de contactos (index.html) tras 1.5 segundos
     setTimeout(() => {
-      window.location.href = 'inicio.html';
+      window.location.href = 'index.html';
     }, 1500);
   });
 });
