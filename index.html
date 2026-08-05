@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestor de Contactos</title>
+  <!-- Enlace al archivo de estilos CSS -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- Enlace al script de interactividad JS (defer asegura que se ejecute al cargar el DOM) -->
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <main class="container">
+    <h1>Gestor de Contactos</h1>
+
+    <!-- SECCIÓN 1: FORMULARIO CREAR CONTACTO -->
+    <section class="card">
+      <h2>Nuevo Contacto</h2>
+      <form id="form-contacto">
+        <input type="text" id="nombre" placeholder="Nombre completo" required>
+        <input type="tel" id="telefono" placeholder="Teléfono" required>
+        <input type="email" id="email" placeholder="Correo electrónico" required>
+        <button type="submit">Guardar</button>
+      </form>
+    </section>
+
+    <!-- SECCIÓN 2: BUSCAR Y LISTAR CONTACTOS -->
+    <section class="card">
+      <h2>Lista de Contactos</h2>
+      <input type="text" id="input-buscar" class="search-bar" placeholder="🔍 Buscar por nombre o teléfono...">
+
+      <table>
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Teléfono</th>
+            <th>Email</th>
+            <th>Acción</th>
+          </tr>
+        </thead>
+        <tbody id="lista-contactos">
+          <!-- JS insertará dinámicamente las filas <tr> aquí -->
+        </tbody>
+      </table>
+    </section>
+  </main>
+<script src="app.js" defer></script>
+<script src="styles.css" defer></script>
+</body>
+</html>

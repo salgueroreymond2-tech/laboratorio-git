@@ -1,0 +1,51 @@
+{
+  "usuarios": [
+    {
+      "id": 1,
+      "nombre": "Admin Sistema",
+      "email": "admin@ejemplo.com",
+      "password_hash": "$2b$10$e8T...hash_de_ejemplo",
+      "rol": "admin",
+      "activo": true,
+      "creado_en": "2026-01-15T08:30:00Z"
+    },
+    {
+      "id": 2,
+      "nombre": "Ana Gómez",
+      "email": "ana@ejemplo.com",
+      "password_hash": "anaejemplo",
+      "rol": "usuario",
+      "activo": true,
+      "creado_en": "2026-02-01T10:15:00Z"
+    }
+  ],
+  "contactos": [
+    {
+      "id": 101,
+      "usuario_id": 1,
+      "nombre": "Carlos Ruiz",
+      "telefono": "+506 8888-1111",
+      "email": "carlos.ruiz@email.com",
+      "empresa": "Tech Solutions",
+      "favorito": true
+    },
+    {
+      "id": 102,
+      "usuario_id": 1,
+      "nombre": "Sofía López",
+      "telefono": "+506 8888-2222",
+      "email": "sofia.lopez@email.com",
+      "empresa": "Design Studio",
+      "favorito": false
+    },
+    {
+      "id": 103,
+      "usuario_id": 2,
+      "nombre": "María Rodríguez",
+      "telefono": "+506 8888-3333",
+      "email": "maria.r@email.com",
+      "empresa": "Innovate LLC",
+      "favorito": true
+    }
+  ]
+}
