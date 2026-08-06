@@ -83,10 +83,12 @@ main.container {
 }
 
 main.container > h1 {
-  font-size: 1.875rem;
+  font-size: 2rem;
   font-weight: 700;
   margin-bottom: 1.5rem;
   color: var(--text-main);
+  font-family: 'Fredoka', 'Segoe UI', sans-serif;
+  letter-spacing: 0.02em;
 }
 
 /* ==========================================
