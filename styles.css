@@ -205,12 +205,12 @@ button {
 }
 
 form button[type="submit"] {
-  background-color: var(--primary-color);
+  background-color: #16a34a;
   color: #ffffff;
 }
 
 form button[type="submit"]:hover {
-  background-color: var(--primary-hover);
+  background-color: #15803d;
 }
 
 button.btn-danger {
